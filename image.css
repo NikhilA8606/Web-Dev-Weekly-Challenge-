@@ -1,0 +1,167 @@
+@font-face {
+    font-family: myFont;
+    src: url(/Pokemon\ Hollow.ttf);
+}
+@font-face {
+    font-family: welcome;
+    src: url(/RULES.ttf);
+}
+*{  padding: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none; 
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/nick-nice-gPm8h3DS1s4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    background:#0f0e0e;
+    height: 80px;
+    width: 100%;
+}
+nav ul{
+    text-align: center;
+   margin-top: -40px;
+}
+
+label.logo{
+    font-family: myFont;
+    color: #ffffffa4;
+    font-size: 25px;
+    padding:0 40px;
+}
+
+
+nav ul li{
+    display: inline-block;  
+}
+
+nav ul li a{
+    color: #ffffffa4;
+    font-size: 17px;
+    padding: 10px 33px;
+    border-radius: 4px;
+}
+a.active,a:hover{
+    background-color:#3c3636bd ;
+    color: #ffffffa4;
+    transition: .5s;
+}
+.btn{
+    float: right;
+    width: 77px;
+    height: 33px;
+    margin-right: 13px;
+    margin-top: 25px;
+    border-radius: 6px;
+    background-color:#3c3636bd ;
+}
+.btn a{
+    color: #fff;
+    font-size: 16px;
+    background: none;
+    padding-top: 10px;
+}
+.checkbtn{
+    color: #ffffffa4;
+    font-size: 25px;
+    line-height: 50px;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+section h1{
+    text-align: center;
+    color: rgb(242, 242, 242);
+    font-size: 60px;
+    font-family: welcome;
+    padding-top: 200px;
+    letter-spacing: 7px;
+    line-height: 120px;
+}
+
+
+footer li{
+    display: inline-block; 
+}
+
+footer ul{
+    text-align: center;
+    margin-top: 181px;
+    color: #fff;
+}
+footer ul li{
+    font-size: 23px;
+    padding: 24px;
+    padding-bottom: 10px;
+}
+
+@media (max-width:952px) {
+    label.logo{
+        font-size: 15px;
+        padding-left: 25px;
+    }
+}
+@media (max-width:858px) {
+    section h1{
+        font-size: 30px;
+        letter-spacing: 4px;
+        line-height: 80px;
+    }
+    .click{
+        margin-left: 120px;
+        font-size: 13px;
+        height: 30px;
+        width: 100px;
+        letter-spacing: 1px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .btn{
+        width: 60px;
+        height: 27px;
+        margin-top: 10px;
+    }
+    footer ul li{
+        font-size:20px ;
+    }
+    
+    nav ul{
+       position: fixed;
+       width: 100%;
+       height: 100%;
+       background:#494747e9;
+       top:80px;
+       left: -100%;
+       text-align: center;
+       transition: all .5s;
+    }   
+    nav ul li{
+        display: block;
+        margin:30px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #000;
+    }
+    #check:checked ~ ul{
+        left: 0
+    }
+}
+
+
+
