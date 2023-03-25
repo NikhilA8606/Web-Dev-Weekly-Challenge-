@@ -104,6 +104,9 @@ footer ul li{
     padding: 24px;
     padding-bottom: 10px;
 }
+footer ul li:hover{
+    cursor: pointer;
+}
 
 @media (max-width:952px) {
     label.logo{
